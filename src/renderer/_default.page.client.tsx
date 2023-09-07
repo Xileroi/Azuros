@@ -1,5 +1,5 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./../../dist/output.css"
 
 import { PageShell } from './components/PageShell';
 import type { PageContextClient } from './types';

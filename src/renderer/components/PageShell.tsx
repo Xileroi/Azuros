@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import "../../../tailwind.css"
 
 import { PageContextProvider } from '../hooks/usePageContext';
 import type { PageContext } from '../types';
