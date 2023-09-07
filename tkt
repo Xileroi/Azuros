@@ -1,0 +1,61 @@
+import {useEffect} from "react"
+import {useState} from "react"
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
+
+/*export function Page(){
+    const [state, setState] = useState(0)
+    useEffect(() => {
+        console.log("YO")
+    }, [])
+    console.log(state)
+    return <button onClick={() => {setState((old) => old + 1)}}>Hello World! {state}</button>
+}*/
+
+export function Page(){
+    const [num, setNum] = useState(0);
+	const [num1, setNum1] = useState(0);
+  
+    const randomNumberInRange = (min: number, max: number) => {
+        return Math.floor(Math.random() 
+                * (max - min + 1)) + min;
+    };
+  
+    const handleClick = (button: "button-1" | "button-2") => {
+        if (button === "button-1"){
+		setNum(randomNumberInRange(1, 20));
+		}
+		else
+			setNum1(randomNumberInRange(1, 200));
+    };
+  
+    return (
+        <div className="wrapper">
+            <h2>Number is: {num}</h2>
+            <button onClick={() => handleClick('button-1')}>
+                Click Me Generate
+            </button>
+			<h2>Number is: {num1}</h2>
+            <button onClick={() => handleClick('button-2')}>
+                Click Me Generate
+            </button>
+			<BasicButtons></BasicButtons>
+            <h1 className="text-1xl text-end hover:underline">
+    Hello world!
+  </h1>
+        </div>
+
+    );
+}
+
+function BasicButtons() {
+  return (
+    <Stack spacing={2} direction="row">
+      <Button variant="text">Login</Button>
+      <Button variant="contained">Disconnect</Button>
+      <Button variant="outlined">Tkt</Button>
+    </Stack>
+  );
+}
+
