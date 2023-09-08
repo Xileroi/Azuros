@@ -94,7 +94,7 @@ console.log(urlPathname)
                 </div>
                 <Disclosure.Panel className="border-b border-gray-700 md:hidden">
                   <div className="space-y-1 px-2 py-3 sm:px-3">
-                  {navigation.map((item) => {
+                    {navigation.map((item) => {
 
                     const active = useMemo( () => {
                         return item === navigation.find((el) => el.href === urlPathname) || false
