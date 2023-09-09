@@ -10,7 +10,7 @@ export function Page() {
             Bonjour !
           </h1>
           <h1 className="text-3xl font-bold tracking-tight text-white">
-            Ceci est la page présentant tout mes projets.
+            Ceci est la page pour me contacter.
           </h1>
         </div>
       </header>
