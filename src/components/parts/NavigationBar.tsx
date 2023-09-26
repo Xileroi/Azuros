@@ -7,6 +7,7 @@ const navigation = [
     { name: 'Accueil', href: '/'},
     { name: 'Projets', href: '/projects'},
     { name: 'Contact', href: '/contact'},
+
   ]
 
   function classNames(...classes: string[]) {
@@ -63,18 +64,6 @@ const navigation = [
                           </div>
                         </div>
                       </div>
-
-
-                      <div className="hidden md:block">
-                        <div className="ml-4 flex items-center md:ml-6">
-                          <button
-                            type="button"
-                            className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                          >
-                          </button>
-                        </div>
-                      </div>
-
 
                       <div className="-mr-2 flex md:hidden">
                         {/* Mobile menu button */}
