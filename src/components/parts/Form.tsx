@@ -4,15 +4,16 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/54ad0b50-5c06-11ee-9198-bf
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { // Ajout du type React.FormEvent<HTMLFormElement>
     e.preventDefault();
 
-    const inputs = e.target.elements;
-    const data = {};
+    const inputs = e.currentTarget.elements as HTMLFormControlsCollection; // Ajout du type HTMLFormControlsCollection
+    const data: { [key: string]: string } = {}; // Définition du type de 'data'
 
     for (let i = 0; i < inputs.length; i++) {
-      if (inputs[i].name) {
-        data[inputs[i].name] = inputs[i].value;
+      const input = inputs[i] as HTMLInputElement; // Ajout du type HTMLInputElement
+      if (input.name) {
+        data[input.name] = input.value;
       }
     }
 
@@ -32,17 +33,16 @@ const ContactForm = () => {
         setSubmitted(true);
       })
       .catch((err) => {
-        // Submit the form manually
-        e.target.submit();
+        // Soumettre le formulaire manuellement (si nécessaire)
+        e.currentTarget.submit();
       });
   };
 
   if (submitted) {
     return (
       <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">We'll be in touch soon.</div>
-
+        <div className="text-2xl">Merci !</div>
+        <div className="text-md">Nous vous contacterons bientôt.</div>
       </>
     );
   }
@@ -53,7 +53,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       method="POST"
     >
-    <p className="text-white py-5">Contactez moi à l'aide de ce formulaire ou par mail : xeleroy@gmail.com</p>
+      <p className="text-white py-5">Contactez moi à l'aide de ce formulaire ou par mail : xeleroy@gmail.com</p>
       <div className="pt-0 mb-3">
         <input
           type="text"
@@ -84,7 +84,6 @@ const ContactForm = () => {
         <button
           className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
           type="submit"
-          
         >
           Envoyer le message
         </button>
