@@ -60,6 +60,65 @@ export function Page() {
                   </ul>
                 </div>
               </div>
+              <div className="py-6">
+                <a
+                  href="https://github.com/Xileroi/BSQ/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg">
+                    Le projet BSQ sur Github
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Delimit text="Libft 42" />
+        <div>
+          <div className="flex flex-col items-center">
+            <h1 className="text-2xl font-bold mb-4 py-5">Projet de l'école 42</h1>
+            <div className="flex">
+              <div className="w-1/2 mr-4">
+                <ul>
+                  <li>
+                    Sur ce projet, le but est simple : réaliser notre propre bibliothèque de
+                    fonctions en C.
+                  </li>
+                  <li>
+                    Nous avons une liste prédéfinie de fonctions à réaliser et le but sera de toutes
+                    les reproduire/créer.
+                  </li>
+                  <li>
+                    Cela va du simple "ft_putchar" qui vise à afficher un caractère à "ft_split"
+                    servant à découper une chaîne de caractères en un tableau de mots délimité par
+                    un certain caractère.
+                  </li>
+                </ul>
+              </div>
+              <div className="w-1/2">
+                <ul>
+                  <li>
+                    Ensuite, tout au long de l'année, notre objectif sera de compléter cette
+                    bibliothèque avec toutes les nouvelles fonctions que nous créerons.
+                  </li>
+                  <li>
+                    Il y aura, par exemple, l'ajout de fonctions telles que "ft_printf" ou encore
+                    "get_next_line" que nous avons créées plus tard et que j'expliquerai ci-dessous.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="py-6">
+              <a
+                href="https://github.com/Xileroi/Libft"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg">
+                  Le projet Libft sur Github
+                </button>
+              </a>
             </div>
           </div>
         </div>
