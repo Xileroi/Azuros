@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import "../../../tailwind.css"
+import '../../../tailwind.css';
 
 import { PageContextProvider } from '../hooks/usePageContext';
 import type { PageContext } from '../types';
@@ -14,9 +14,7 @@ export function PageShell(props: PageShellProps) {
 
   return (
     <React.StrictMode>
-        <PageContextProvider pageContext={pageContext}>
-          {children}
-        </PageContextProvider>
+      <PageContextProvider pageContext={pageContext}>{children}</PageContextProvider>
     </React.StrictMode>
   );
 }

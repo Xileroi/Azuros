@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/54ad0b50-5c06-11ee-9198-bfee6681f065";
+const FORM_ENDPOINT = 'https://public.herotofu.com/v1/54ad0b50-5c06-11ee-9198-bfee6681f065';
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -21,9 +21,9 @@ const ContactForm = () => {
       method: 'POST',
       headers: {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     })
       .then((response) => {
         if (!response.ok) {
@@ -47,12 +47,10 @@ const ContactForm = () => {
   }
 
   return (
-    <form
-      action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
-      method="POST"
-    >
-      <p className="text-white py-5">Contactez moi à l'aide de ce formulaire ou par mail : xeleroy@gmail.com</p>
+    <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
+      <p className="text-white py-5">
+        Contactez moi à l'aide de ce formulaire ou par mail : xeleroy@gmail.com
+      </p>
       <div className="pt-0 mb-3">
         <input
           type="text"

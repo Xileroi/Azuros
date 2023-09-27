@@ -9,7 +9,7 @@ const Context = createContext<PageContext>(undefined as unknown as PageContext);
 
 export function PageContextProvider({
   pageContext,
-  children,
+  children
 }: {
   pageContext: PageContext;
   children: React.ReactNode;

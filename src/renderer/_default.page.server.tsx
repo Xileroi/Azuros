@@ -13,7 +13,7 @@ export async function render(pageContext: PageContextServer) {
   const viewHtml = ReactDOMServer.renderToString(
     <PageShell pageContext={pageContext}>
       <Page {...pageProps} />
-    </PageShell>,
+    </PageShell>
   );
 
   return escapeInject`<!DOCTYPE html>

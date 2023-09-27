@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import { Footer } from "./parts/Footer";
-import { NavigationBar } from "./parts/NavigationBar";
+import { ReactNode } from 'react';
+import { Footer } from './parts/Footer';
+import { NavigationBar } from './parts/NavigationBar';
 
 interface WebsiteProps {
   children: ReactNode;
