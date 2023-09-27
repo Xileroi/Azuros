@@ -41,14 +41,14 @@ const ContactForm = () => {
     return (
       <>
         <div className="text-2xl">Merci !</div>
-        <div className="text-md">Nous vous contacterons bientôt.</div>
+        <div className="text-md">Nous vous recontacterons très bientôt.</div>
       </>
     );
   }
 
   return (
     <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
-      <p className="text-white py-5">
+      <p className="text-white mb-7">
         Contactez moi à l'aide de ce formulaire ou par mail : xeleroy@gmail.com
       </p>
       <div className="pt-0 mb-3">

@@ -11,10 +11,7 @@ export function Page() {
         </div>
       </header>
       <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 flex-grow">
-        <div></div>
-        <div className=" ">
-          <ContactForm />
-        </div>
+        <ContactForm />
       </div>
     </Website>
   );

@@ -110,11 +110,7 @@ export function Page() {
               </div>
             </div>
             <div className="py-6">
-              <a
-                href="https://github.com/Xileroi/Libft"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/Xileroi/Libft" target="_blank" rel="noopener noreferrer">
                 <button className="mr-5 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg">
                   Le projet Libft sur Github
                 </button>
