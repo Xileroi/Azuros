@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
-const FORM_ENDPOINT = "https://public.herotofu.com/v1/54ad0b50-5c06-11ee-9198-bfee6681f065"; // TODO - update to the correct endpoint
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/54ad0b50-5c06-11ee-9198-bfee6681f065";
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { // Ajout du type React.FormEvent<HTMLFormElement>
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const inputs = e.currentTarget.elements as HTMLFormControlsCollection; // Ajout du type HTMLFormControlsCollection
-    const data: { [key: string]: string } = {}; // Définition du type de 'data'
+    const inputs = e.currentTarget.elements as HTMLFormControlsCollection;
+    const data: { [key: string]: string } = {};
 
     for (let i = 0; i < inputs.length; i++) {
-      const input = inputs[i] as HTMLInputElement; // Ajout du type HTMLInputElement
+      const input = inputs[i] as HTMLInputElement;
       if (input.name) {
         data[input.name] = input.value;
       }
@@ -33,7 +33,6 @@ const ContactForm = () => {
         setSubmitted(true);
       })
       .catch((err) => {
-        // Soumettre le formulaire manuellement (si nécessaire)
         e.currentTarget.submit();
       });
   };

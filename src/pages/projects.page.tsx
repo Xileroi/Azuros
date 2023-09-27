@@ -1,5 +1,7 @@
 import React from "react";
 import { Website } from "../components/Website";
+import { Delimit } from "../components/parts/Delimit";
+
 
 
 export function Page() {
@@ -17,6 +19,7 @@ export function Page() {
       </header>
       <div className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 flex-grow">
         <div>
+          <Delimit text='BSQ 42'/>
           <p className="text-white">Test</p>
         </div>
       </div>
