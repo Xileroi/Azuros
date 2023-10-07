@@ -26,13 +26,13 @@ export function NavigationBar() {
               <div className="border-b border-gray-700 flex justify-center items-center">
                 <div className="flex h-16 items-center flex-1 md:flex-grow-0 justify-between px-4 sm:px-0">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0">
+                    {/*<div className="flex-shrink-0">
                       <img
                         className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        src=""
                         alt="Azuros"
                       />
-                    </div>
+                    </div>*/}
 
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
