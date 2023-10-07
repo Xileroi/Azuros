@@ -21,9 +21,9 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
             key={index}
             className="w-full md:w-1/2 lg:w-1/3 px-4 mb-4"
           >
-            <div className="my-4 flex items-center justify-start">
+            <div className="my-4 flex flex-col md:flex-row md:items-center justify-start">
               <span className="text-xl text-gray-300">• {skill.name}</span>
-              <div className="flex ml-2">
+              <div className="flex ml-2 mt-2 md:mt-0">
                 {Array.from({ length: 5 }, (_, i) => (
                   <span
                     key={i}
