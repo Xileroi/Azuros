@@ -1,4 +1,4 @@
-import { forwardRef, InputHTMLAttributes, Ref } from 'react';
+import {forwardRef, InputHTMLAttributes, Ref} from 'react';
 
 interface InputProps {
   label: string;
@@ -12,7 +12,7 @@ export const Input = forwardRef(function InputForwardRef(
   ref: Ref<HTMLInputElement>
 ) {
   const { label, type = 'text', name, placeholder } = props;
-  const uuid = crypto.randomUUID();
+  const uuid = (Math.random() + 1).toString(36).substring(7);
 
   return (
     <div className="flex flex-1 flex-col gap-2">
