@@ -1,5 +1,5 @@
-import { Pricing } from '../../@components/pricings/Pricing.tsx';
-import { Testimonial } from '../../@components/Testimonials/Testimonial.tsx';
+import {Pricing} from '../../@components/pricings/Pricing.tsx';
+import {Testimonial} from '../../@components/Testimonials/Testimonial.tsx';
 
 export default function Page() {
   return (
@@ -16,10 +16,11 @@ export default function Page() {
             <div className="flex flex-col gap-5">
               <span className="text-xl font-bold text-center sm:text-left">Qui suis-je ?</span>
               <p className="max-w-xl text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a tincidunt neque. In
-                vitae pulvinar nisi. Cras eget erat sed nulla bibendum dictum sed ut magna. Etiam a
-                metus nec orci luctus cursus. Proin vitae risus est. Vestibulum maximus augue ornare
-                tincidunt efficitur. Nunc quis neque eleifend, ultricies mi nec, ultricies nisi.
+                  Yanis Lounici, 20 ans et actuellement élève pour ma deuxième année à l'école 42.
+                  Je possède de bonnes compétences en C et en algorithmie, j'ai également j'ai appris en auto-didacte l'HTML,
+                  le CSS et le JS dont la lib REACT. Je m'engage en tant que qu'auto-entrepreneur pour réaliser de petits projets afin d'acquérir
+                  de l'expérience professionnel dans ce domaine, je serais donc ravis de vous accompagner pour réaliser tout type de projet en matière
+                  de création de site web.
               </p>
             </div>
           </div>
@@ -28,11 +29,10 @@ export default function Page() {
 
       <Pricing
         title="Envie d'une application web pour votre entreprise ?"
-        description="Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi
-            velit ut non voluptas in. Explicabo id ut laborum."
+        description="Faites appels à mes services pour réaliser votre application web sur mesure et ainsi m'aider également
+         à acquérir de l'expérience professionnelle tout en ayant un service de qualité."
         smallTitle="Développement complet de votre application web."
-        smallDescription="Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet indis
-              perferendis blanditiis repellendus etur quidem assumenda."
+        smallDescription="Je me porte garant quant à l'hébergement et le maintien de votre application web et vous garantit un service de qualité dans un temps correct."
         price={300}
         features={[
           'Développement sur mesure',
@@ -46,28 +46,20 @@ export default function Page() {
       <Testimonial
         testimonials={[
           {
-            body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
-            logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
+            body: 'Un très bon développeur, très à l\'écoute et très professionnel. Une imagination débordante et plein d\'idées. Je recommande fortement.',
+            logoUrl: 'https://www.zakodium.com/brand/zakodium-logo.svg',
             author: {
-              name: 'Brenna Goyette',
+              name: 'Sebastien Criquet',
               imageUrl:
-                'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80'
+                'https://media.licdn.com/dms/image/C4D03AQFjbd5lNB4iMQ/profile-displayphoto-shrink_200_200/0/1582297527606?e=1714608000&v=beta&t=Rs8Na5EeDd9RVUj0Xry_sw0IU2XBrE1U2Tiyga_SwOA'
             }
           },
           {
-            body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
+            body: 'N\'hésitez pas à me donner votre avis sur mon travail et ainsi m\'aider à m\'améliorer !',
             author: {
-              name: 'Leslie Alexander',
+              name: 'Peut être vous ?',
               imageUrl:
-                'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
-            }
-          },
-          {
-            body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-            author: {
-              name: 'Leonard Krasner',
-              imageUrl:
-                'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                'yanis.lounici.webp'
             }
           }
         ]}
